@@ -1004,7 +1004,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.5.1":
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.5.1", "@babel/runtime@^7.5.5":
   version "7.11.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
   integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
@@ -1308,6 +1308,70 @@
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
+
+"@orbit/coordinator@^0.17.0-beta.7":
+  version "0.17.0-beta.7"
+  resolved "https://registry.yarnpkg.com/@orbit/coordinator/-/coordinator-0.17.0-beta.7.tgz#a6e445737f9d93ac83dfe2dfed35b27cb83201d8"
+  integrity sha512-JqPl/NRWqWXWi9xwY5EO8VtoqDJ1/ZVHDN4E/eimPx8wEWmP/2vAC4ufNdePvaaCwgaKuBQxjiz/pccV2p84BA==
+  dependencies:
+    "@orbit/core" "^0.17.0-beta.7"
+    "@orbit/data" "^0.17.0-beta.7"
+    "@orbit/utils" "^0.17.0-beta.7"
+
+"@orbit/core@^0.17.0-beta.7":
+  version "0.17.0-beta.7"
+  resolved "https://registry.yarnpkg.com/@orbit/core/-/core-0.17.0-beta.7.tgz#611daa41af09ac44521e10c9023f00b46ae2ebff"
+  integrity sha512-G0FUBjoVak2g0MXnvFAZHvoaXbC/pntS6hmPEGuSXSFq2zn1067s3YYkeNo058xGAMsWgwEaPYgEIrapwnEMVQ==
+  dependencies:
+    "@orbit/utils" "^0.17.0-beta.7"
+
+"@orbit/data@^0.17.0-beta.7":
+  version "0.17.0-beta.7"
+  resolved "https://registry.yarnpkg.com/@orbit/data/-/data-0.17.0-beta.7.tgz#563c90b3bea24d582340f5d759ca710458a4e93d"
+  integrity sha512-NHF6lsNmPne6CIzamDDv7frBkMBaEjQk/MrdHfQ+uBWo2b4VzrLKGCr4mpjLVSzRqNrRxjAYXLXTgFZ0cYinDw==
+  dependencies:
+    "@orbit/core" "^0.17.0-beta.7"
+    "@orbit/utils" "^0.17.0-beta.7"
+
+"@orbit/identity-map@^0.17.0-beta.7":
+  version "0.17.0-beta.7"
+  resolved "https://registry.yarnpkg.com/@orbit/identity-map/-/identity-map-0.17.0-beta.7.tgz#c07a9e3c90a3556c1eea2dddc408429c08e90b23"
+  integrity sha512-FzIMeH2uSSwz9VgzzCupSxtqXiSW6OXDY36uD8JAQzcmZjVgSposvpAxkxj5qW/am/mgVEUgHY14hqTdktsqHw==
+
+"@orbit/immutable@^0.17.0-beta.7":
+  version "0.17.0-beta.7"
+  resolved "https://registry.yarnpkg.com/@orbit/immutable/-/immutable-0.17.0-beta.7.tgz#086263c278b4aec8ed3a7edc02fed794bdd6ec7a"
+  integrity sha512-w4upJIu0AhNWQGW+gKM3fMQjp3We6YQTH9RwqW3/9UxK56ogDRM0zTTXO3HdDPiVPumtKOIDfkq1s3dh1yPbmQ==
+
+"@orbit/memory@^0.17.0-beta.7":
+  version "0.17.0-beta.7"
+  resolved "https://registry.yarnpkg.com/@orbit/memory/-/memory-0.17.0-beta.7.tgz#c649d938cd74900d19163abc5abf51967661c73f"
+  integrity sha512-6kgMVEX4jdqifPD7ShpyPSpb2kOEzRXMn7s8NNABxRTsje2slIMwK+rnfwmlurgEwhesCYlDdH7UhUlgPYNayA==
+  dependencies:
+    "@orbit/core" "^0.17.0-beta.7"
+    "@orbit/data" "^0.17.0-beta.7"
+    "@orbit/immutable" "^0.17.0-beta.7"
+    "@orbit/record-cache" "^0.17.0-beta.7"
+    "@orbit/utils" "^0.17.0-beta.7"
+
+"@orbit/prettier-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@orbit/prettier-config/-/prettier-config-1.0.0.tgz#47f8bd1bf5234eab6f2664b193b09aacc951756f"
+  integrity sha512-k/sHOZIS2MJou7RDMczF8PizwhDH1CGj9j3dt7lK6YBzVswxVV1D4XRtj7EIIZrkiNd9zH/K+5R0wrxkQnss2g==
+
+"@orbit/record-cache@^0.17.0-beta.7":
+  version "0.17.0-beta.7"
+  resolved "https://registry.yarnpkg.com/@orbit/record-cache/-/record-cache-0.17.0-beta.7.tgz#d478aac9cccfa88407555c7cfc429d0cf6dc2d10"
+  integrity sha512-u7HuBIVNUt1Z9qVreotkhJxptPJLJzhXyCwa49ttLt38um2BP7cay2bO26uIUjdwgGjXWL+U9FmzLWtw97pMJg==
+  dependencies:
+    "@orbit/core" "^0.17.0-beta.7"
+    "@orbit/data" "^0.17.0-beta.7"
+    "@orbit/utils" "^0.17.0-beta.7"
+
+"@orbit/utils@^0.17.0-beta.7":
+  version "0.17.0-beta.7"
+  resolved "https://registry.yarnpkg.com/@orbit/utils/-/utils-0.17.0-beta.7.tgz#4ad7011664293c58cfe6d86f8f70e95ea058db60"
+  integrity sha512-dL9B8dwTULl2Hga88l9yts0ORs4+J7Tn9gdfjNjslRnWZ33aandonDhDKVyi4tzhzn4CmJWge10P+eWZ63NV+g==
 
 "@sheerun/mutationobserver-shim@^0.3.2":
   version "0.3.3"
@@ -8620,6 +8684,13 @@ react-is@^16.12.0, react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-query@^2.23.0:
+  version "2.23.0"
+  resolved "https://registry.yarnpkg.com/react-query/-/react-query-2.23.0.tgz#9f9552a30380dfc1da2c165b5011465a78128ace"
+  integrity sha512-LHBhrr7ntstjpt85ssEaW3cGJx4BqQBFleTM3fXMO0MFzaMDQx0oxdUur+iQSOpLGPlrpToJbrjFNMQTpEExdA==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+
 react-scripts@3.4.3:
   version "3.4.3"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-3.4.3.tgz#21de5eb93de41ee92cd0b85b0e1298d0bb2e6c51"
@@ -10275,6 +10346,11 @@ url@^0.11.0:
   dependencies:
     punycode "1.3.2"
     querystring "0.2.0"
+
+use-debounce@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/use-debounce/-/use-debounce-5.0.0.tgz#839592080a0c2681a5552d9fb5bc2a970fafa77c"
+  integrity sha512-ixDekk7e2wafKlaitucqYUEkpyMwfqxz0P0s8/kcH6xJMwHEovrjsJMPzZ6a4+PhcVyAJ8prk1WI8XRNUWD7aw==
 
 use@^3.1.0:
   version "3.1.1"

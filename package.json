@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@orbit/coordinator": "^0.17.0-beta.7",
+    "@orbit/core": "^0.17.0-beta.7",
+    "@orbit/data": "^0.17.0-beta.7",
+    "@orbit/identity-map": "^0.17.0-beta.7",
+    "@orbit/memory": "^0.17.0-beta.7",
+    "@orbit/utils": "^0.17.0-beta.7",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -12,8 +18,13 @@
     "@types/react-dom": "^16.9.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-query": "^2.23.0",
     "react-scripts": "3.4.3",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "use-debounce": "^5.0.0"
+  },
+  "devDependencies": {
+    "@orbit/prettier-config": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
